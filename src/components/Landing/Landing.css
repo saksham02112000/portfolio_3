@@ -1,8 +1,14 @@
 .landing {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.landingPageResume{
+  background-color: #212121;
+  color: #f03939;
 }
 
 .landing--container {
@@ -10,6 +16,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -55,7 +62,7 @@
 .landing--container-right {
   flex: 65%;
   height: 100%;
-  background-color: #eaeaea;
+  background-color: #f03939;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -183,7 +190,7 @@
     flex: initial;
     height: 70%;
     width: 100%;
-    background-color: #eaeaea;
+    background-color: #f03939;
     align-items: center;
     justify-content: center;
     padding: 0 2rem;

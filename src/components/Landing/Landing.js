@@ -7,14 +7,14 @@ import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
+import Image from "../../assets/landingPage/img.jpeg";
 
 import {
-    FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
+    FaInstagram,
 } from 'react-icons/fa';
+import {Link} from "@mui/material";
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -101,39 +101,13 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.twitter && (
+                        {socialsData.instagram && (
                             <a
-                                href={socialsData.twitter}
+                                href={socialsData.instagram}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaTwitter
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
-                                />
-                            </a>
-                        )}
-                        {socialsData.blogger && (
-                            <a
-                                href={socialsData.blogger}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaBlogger
+                                <FaInstagram
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Blogger'
@@ -143,7 +117,7 @@ function Landing() {
                     </div>
                 </div>
                 <img
-                    src={headerData.image}
+                    src={Image}
                     alt=''
                     className='landing--img'
                     style={{
@@ -164,18 +138,11 @@ function Landing() {
                         <p>{headerData.desciption}</p>
 
                         <div className='lcr-buttonContainer'>
-                            {headerData.resumePdf && (
-                                <a
-                                    href={headerData.resumePdf}
-                                    download='resume'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <Button className={classes.resumeBtn}>
-                                        Download CV
-                                    </Button>
-                                </a>
-                            )}
+                            <Link underline="none" target="_blank" href="https://drive.google.com/file/d/1rq9osKGLLvoQdWmyf8Gf4t2jllnn-VX_/view?usp=sharing">
+                                <Button className={classes.resumeBtn}>
+                                    Resume
+                                </Button>
+                            </Link>
                             <NavLink
                                 to='/#contacts'
                                 smooth={true}

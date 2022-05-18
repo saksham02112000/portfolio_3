@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100vh;
+    min-height: 80vh;
     overflow-x: hidden;
     padding: 2rem;
 }
@@ -49,6 +49,32 @@
     margin-top: 2rem;
 }
 
+
+.about .line-styling{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 85%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .line-styling .style-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.about .line-styling .style-line{
+    width: 95%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
 .projects--viewAll a button {
     outline: none;
     border: none;
@@ -67,7 +93,6 @@
 }
 
 
-
 @media (min-width: 992px) and (max-width: 1380px) {
 
 }
@@ -81,6 +106,9 @@
         justify-content: center;
         width: 100%;
     }
+    .about .line-styling {
+        top: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -91,6 +119,18 @@
 }
 
 @media screen and (max-width: 600px) {
+    .line-styling .style-circle{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+    .line-styling .style-line{
+        width: 93%;
+        height: 3px;
+        border-radius: 10px;
+    }
+
+
     .projects--header h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
@@ -118,4 +158,11 @@
 
 @media only screen and (device-width: 768px) {
 
+}
+
+.front-header{
+    margin-right: 2rem;
+    background-color: #f03939;
+    padding: 0.5rem;
+    color: white;
 }

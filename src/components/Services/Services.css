@@ -7,11 +7,19 @@
     padding: 3.7rem;
 }
 
+.front-header{
+    margin-right: 2rem;
+    background-color: #f03939;
+    padding: 0.5rem;
+    color: white;
+}
+
 .services-header {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 .services-header > h1 {

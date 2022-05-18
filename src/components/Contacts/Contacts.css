@@ -2,8 +2,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -19,12 +19,26 @@
 .contacts--container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 2rem 6rem 3rem;
     width: 80%;
     height: 100%;
     margin-top: 2rem;
+}
+
+.contacts-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-header{
+    margin-right: 2rem;
+    background-color: #f03939;
+    padding: 0.5rem;
+    color: white;
 }
 
 .contacts--container > h1 {
@@ -36,15 +50,15 @@
 
 .contacts-body {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 .contacts-form {
     display: flex;
-    flex: 0.4;
+    flex: 0.7;
     width: 100%;
 }
 
@@ -158,11 +172,11 @@
 }
 
 .socialmedia-icons {
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     gap: 1.5rem;
     margin-top: 4rem;
 }

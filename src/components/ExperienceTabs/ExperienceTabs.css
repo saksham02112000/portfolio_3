@@ -1,0 +1,61 @@
+.experienceTabs{
+    background-color: #212121;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.experienceTab{
+    color: white;
+}
+
+.experienceTabLeftScroller{
+    color: white;
+}
+
+
+.front-header{
+    font-family: 'Poppins', sans-serif;
+    margin-right: 2rem;
+    background-color: #f03939;
+    padding: 0.5rem;
+    color: white;
+}
+
+.companyWorked{
+    color: white;
+}
+
+.headingWorked{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.8rem;
+}
+
+.companyDuration{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.companyAbout{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.companyTech{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.companyTechStack{
+    margin-bottom: 1rem;
+    background-color: #f03939;
+    margin-right: 2rem;
+    padding: 0.35rem 1rem 0.35rem 1rem;
+    font-size: 1rem;
+    /*border: 1px solid black;*/
+    border-radius: 1rem;
+}
